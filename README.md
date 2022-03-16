@@ -5,8 +5,8 @@ Application reads strings from standard and parses them. If the strings
 don't conform to certain rules, it logs them to a file. 
 Input strings can be of 3 differing types: personnummer, samordningsnummer or organisationsnummer.
 
-App accepts following options: 
- -O  parse strings as organisationsnummer
+App accepts following options:  
+ -O  parse strings as organisationsnummer 
  -S  parse strings as personnummer or samordningsnummer (both accepted)
 
 No option means parse strings as personnummer only.
