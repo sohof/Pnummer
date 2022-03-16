@@ -15,9 +15,9 @@ You can pipe in a text file containing the strings, one string per line.
 
 Build application either using Maven or run a simple makefile. 
 
-## Maven instructions
-### to compile/build run command: 
-  mvn package 
+### Maven instructions
+**to compile/build run command:** 
+mvn package 
 ### to clean build files in target folder run command:
   mvn clean
 ### to run app:
