@@ -16,18 +16,18 @@ You can pipe in a text file containing the strings, one string per line.
 Build application either using Maven or run a simple makefile. 
 
 ### Maven instructions
-**to compile/build run command:** 
+**to build run command:**   
 mvn package 
-### to clean build files in target folder run command:
-  mvn clean
-### to run app:
- java -cp target/Pnummer-1.0-SNAPSHOT.jar dastmard.App
+**to clean build files in target folder run command:**  
+mvn clean
+**to run app:**    
+java -cp target/Pnummer-1.0-SNAPSHOT.jar dastmard.App
 
-## Make instructions
+### Make instructions
 
-## to compile/build run command: folder "dastmard" will be created in current diretory containing all classes
- make  
-## to run app:
-  java dastmard.App 
-## to clean/remove all build files/folders including any log files created
- make clean
+**to compile/build run command: folder "dastmard" will be created in current diretory containing all classes**. 
+make  
+**to run app:**. 
+java dastmard.App 
+**to clean/remove all build files/folders including any log files created**. 
+make clean
