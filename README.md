@@ -17,17 +17,17 @@ Build application either using Maven or run a simple makefile.
 
 ### Maven instructions
 **to build run command:**   
-mvn package 
+mvn package.  
 **to clean build files in target folder run command:**  
-mvn clean
+mvn clean. 
 **to run app:**    
-java -cp target/Pnummer-1.0-SNAPSHOT.jar dastmard.App
+java -cp target/Pnummer-1.0-SNAPSHOT.jar dastmard.App. 
 
 ### Make instructions
 
 **to compile/build run command: folder "dastmard" will be created in current diretory containing all classes**. 
-make  
+make.   
 **to run app:**. 
-java dastmard.App 
+java dastmard.App.  
 **to clean/remove all build files/folders including any log files created**. 
-make clean
+make clean. 
