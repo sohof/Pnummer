@@ -24,6 +24,15 @@ public final class PersonalNumber implements Checkable {
   private final String controlNumber; // is the last digit from suppplied input to checked with luhn.
   private boolean coordinationNumber = false;
 
+
+  public static PersonalNumber newPersonalNumber(String personnummer) throws ParseException {
+    return new PersonalNumber(personnummer,false);
+  }
+
+  public static PersonalNumber newSamOrPersonalNumber(String personnummer) throws ParseException {
+    return new PersonalNumber(personnummer,true);
+  }
+
   /**
   * Create a new PersonalNumber object from a string. In the default case a coordination number
   * is not considered to be a valid personnummer.
@@ -51,6 +60,7 @@ public final class PersonalNumber implements Checkable {
     if (!matches.find()) {
       throw new ParseException("Parse Failure, invalid input, not a match");
     }
+
 
 
     String prelimCentury = null;

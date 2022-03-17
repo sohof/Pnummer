@@ -55,13 +55,13 @@ public class App
         try {
 
           if (TYP == InputType.ORGNR) {
-            new OrgNumber(nextString);
+            OrgNumber.newOrgNumber(nextString);
           }
           if (TYP == InputType.SAMORDNR) {
-            new PersonalNumber(nextString,true);
+            PersonalNumber.newSamOrPersonalNumber(nextString);
           }
           if (TYP == InputType.PERSONNR) {
-            new PersonalNumber(nextString);
+            PersonalNumber.newPersonalNumber(nextString);
           }
 
         } catch (ParseException ex) {

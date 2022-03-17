@@ -18,6 +18,9 @@ public final class OrgNumber implements Checkable {
   private final String threeNumbers; // the 3-first digits of the 2nd part
   private final String controlNumber; // is the last digit from suppplied input to checked with luhn.
 
+  public static OrgNumber newOrgNumber(String orgnr) throws ParseException {
+    return new OrgNumber(orgnr);
+  }
   /**
   * Create a new OrgNumber object from a string.
   * @param orgnr Organization identity number as a string to create the object from.
